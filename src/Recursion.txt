@@ -1,0 +1,20 @@
+## +13 +1 Program to demostrate recursion ##
+PROGRAM recurse
+DECLARE
+	INTEGER a;
+END
+
+PROCEDURE re{REFERENCE INTEGER a}
+	OUTPUT "%d", a;
+	a <- a + 1;
+	IF (a >= 10 ) THEN
+		CALL re{REFERENCE a};		
+	END;
+END
+
+MAIN
+	a <- 0;
+	CALL re{REFERENCE a};
+	OUTPUT "%d", a;
+END
+END

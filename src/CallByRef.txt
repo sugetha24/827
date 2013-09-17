@@ -1,0 +1,18 @@
+## +13 Program to demostrate call by reference##
+PROGRAM callbyref
+	DECLARE
+		INTEGER x;
+	END
+
+PROCEDURE call1{REFERENCE INTEGER x}
+	x <- 10;
+	OUTPUT " ", x;
+END
+
+MAIN
+	x <- 5;
+	OUTPUT " ", x;
+	CALL call1{VALUE x};
+	OUTPUT " ", x;
+END
+END

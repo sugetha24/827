@@ -1,0 +1,60 @@
+##+1+13    print the symbolic 4-tuples, etc. ##
+/*  This program should not contains any errors */
+PROGRAM test   
+  DECLARE
+      INTEGER x;   
+      INTEGER i;   
+      INTEGER j;   
+      REAL a WITH 125 ELEMENTS ;   
+      INTEGER c WITH 100 ROWS 25 COLUMNS ;   
+      INTEGER d WITH 100 ROWS 25 COLUMNS ;   
+      INTEGER b WITH 235 ROWS 543 COLUMNS ;   
+      REAL f WITH 50 ROWS 60 COLUMNS ;
+      INTEGER lkj WITH 100 ELEMENTS ;    
+      REAL help;    
+  END
+
+  PROCEDURE hithere{VALUE INTEGER d,  REFERENCE REAL tre WITH 125 ELEMENTS,  
+                    VALUE INTEGER k WITH 235 ROWS 543 COLUMNS }
+    DECLARE
+        INTEGER a;
+        INTEGER x;
+        INTEGER i;
+        INTEGER j;
+        INTEGER hcg WITH 75  ELEMENTS;
+        INTEGER def WITH 75  ELEMENTS;
+    END
+
+    IF (a <= 10) THEN
+      x <- a + ( i * j ) / a ;
+    ELSE
+      ## print the semantic stack before and after a reduction  ##
+      a <- - x - d * ( i / j ) ;
+      ## ##
+    END;
+    OUTPUT "%d5 - %d5  %d\n", a, x, k[a:i];
+  END   /* hithere */
+
+  PROCEDURE byethere{VALUE REAL a,  REFERENCE REAL k WITH 125 ELEMENTS,  
+                     VALUE REAL tre WITH 235 ROWS 543 COLUMNS }
+      a <- k[100] + ( k[i] * tre[1:2] ) ;
+      lkj[i] <- - a - tre[i:x] * ( x / k[i] ) ;
+      INPUT "5d,%d,%d\n", x, a, tre[x:x];
+  END   /* byethere  */
+
+  MAIN                                                      
+    OUTPUT  "%d5 - %d5 %d\n", lkj[i], x, help;
+    DO
+      ## print the semantic stack before and after a reduction  ##
+      DO
+        IF (i==j) THEN
+          ## ##
+          c[x:i] <- c[j:x]*i/j;
+          CALL hithere{VALUE i, REFERENCE x, VALUE j};
+          lkj[c[x:i]] <- lkj[x];
+        END;
+      UNTIL ( j > 20) END;
+    UNTIL (i < i*3) END;
+  END   /* MAIN  */
+
+END     

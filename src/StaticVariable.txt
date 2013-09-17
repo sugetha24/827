@@ -1,0 +1,27 @@
+## +13  Program to demostrate static variable ##
+PROGRAM static
+	DECLARE
+		INTEGER a;
+		INTEGER b;
+	END
+PROCEDURE change{REFERENCE INTEGER b}
+	DECLARE
+		INTEGER a;
+	END
+	a <- 10;
+	b <- 20;
+	OUTPUT " ", a;
+	OUTPUT " ", b;
+	
+END
+
+MAIN
+	a <- 15;
+	b <- 5;
+	OUTPUT " ", a;
+	OUTPUT " ", b;
+	CALL change{REFERENCE b};
+	OUTPUT " ", a;
+	OUTPUT " ", b;
+END
+END

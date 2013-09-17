@@ -1,0 +1,23 @@
+## +13 Program to demonstrate Register Spillage ##
+PROGRAM regspill
+DECLARE
+	INTEGER a;
+	INTEGER b;
+	INTEGER c;
+	INTEGER d;
+	INTEGER e;
+	INTEGER f;
+	INTEGER x;
+END
+
+MAIN
+	a <- 1;
+	b <- 2;	
+	c <- 3;
+	d <- 4;
+	e <- 5;
+	f <- 5;
+	x <- (((a+b) + (c+d) + (e+f)) + ((a+b) + (c+d) + (e+f)));
+	OUTPUT " ", x;	
+END
+END

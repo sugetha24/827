@@ -1,0 +1,15 @@
+## +13 Program to show arithmatic operation##
+PROGRAM arithmatic
+DECLARE
+	REAL a;
+	REAL b;
+	REAL c;
+END
+
+MAIN
+	a <- 1.0;
+	b <- 5.5;
+	c <- a-b;
+	OUTPUT " %d", c;
+END
+END

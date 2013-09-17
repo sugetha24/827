@@ -1,0 +1,57 @@
+## +13 Program to print out matrix addition ##
+PROGRAM matrixadd	
+	DECLARE
+		INTEGER i;
+		INTEGER j;
+		INTEGER a WITH 4 ROWS 4 COLUMNS;
+		INTEGER b WITH 4 ROWS 4 COLUMNS;
+		INTEGER c WITH 4 ROWS 4 COLUMNS;
+	END 
+
+	MAIN
+		i <- 0;
+		j <- 0;		
+    DO
+      DO
+          a[i:j] <- 1;
+          b[i:j] <- 2;
+          //c[i:j] <- a[i:j] + b[i:j];
+		  //OUTPUT  " %d ", c[i:j];
+		  j <- j + 1;
+      UNTIL ( j < 4) END;
+		  j <- 0;
+		  i <- i + 1;
+      UNTIL (i < 4) END;
+      
+      
+      
+		i <- 0;
+		j <- 0;	
+      		
+    DO
+      DO
+          c[i:j] <- a[i:j] + b[i:j];
+		  //OUTPUT  " %d ", c[i:j];
+		  j <- j + 1;		  
+      UNTIL ( j < 4) END;
+		  j <- 0;
+		  i <- i + 1;
+      UNTIL (i < 4) END;
+      
+      
+      
+		i <- 0;
+		j <- 0;	
+      		
+    DO
+      DO            
+    	  OUTPUT  " %d ", c[i:j] ;
+		  j <- j + 1;
+      UNTIL ( j < 4) END;
+		  j <- 0;
+		  i <- i + 1;
+      UNTIL (i < 4) END;
+       //OUTPUT  " %d ", c[i:j] ;
+		
+  END   /* MAIN  */
+END 

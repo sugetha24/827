@@ -1,6 +1,0 @@
-clear
-filename="$1"
-nasm -f elf32 -o $filename.o $filename.asm
-gcc -m32 -o $filename $filename.o
-./$filename
-
